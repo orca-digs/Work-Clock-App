@@ -1,0 +1,1 @@
+package com.example.workclockapp\n\nimport androidx.room.Entity\nimport androidx.room.PrimaryKey\nimport java.util.Date\n\n@Entity(tableName = "clock_record")\ndata class ClockRecord(\n    @PrimaryKey(autoGenerate = true) val id: Long = 0,\n    val clockInTime: String, \n    val clockOutTime: String, \n    val date: String, \n    val duration: Long\n)
